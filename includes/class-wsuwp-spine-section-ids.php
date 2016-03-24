@@ -1,8 +1,8 @@
 <?php
 
-class WSUWP_Plugin_Skeleton {
+class WSUWP_Spine_Section_Ids {
 	/**
-	 * @var WSUWP_Plugin_Skeleton
+	 * @var WSUWP_Spine_Section_Ids
 	 */
 	private static $instance;
 
@@ -12,11 +12,11 @@ class WSUWP_Plugin_Skeleton {
 	 *
 	 * @since 0.0.1
 	 *
-	 * @return \WSUWP_Plugin_Skeleton
+	 * @return \WSUWP_Spine_Section_Ids
 	 */
 	public static function get_instance() {
 		if ( ! isset( self::$instance ) ) {
-			self::$instance = new WSUWP_Plugin_Skeleton();
+			self::$instance = new WSUWP_Spine_Section_Ids();
 			self::$instance->setup_hooks();
 		}
 		return self::$instance;
